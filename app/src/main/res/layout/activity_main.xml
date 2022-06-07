@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="403dp"
+        android:layout_height="326dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="167dp"
+                android:layout_height="155dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/_2215374_p_ginas_de__lbum_de_fotos_con_marcos_de_fotos_retro_vector_plantilla_de_dise_o2" />
+
+            <LinearLayout
+                android:layout_width="223dp"
+                android:layout_height="155dp"
+                android:orientation="vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="0dp">
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/nombre"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textColorHint="#616161"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <EditText
+                    android:id="@+id/etEdad"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/edad"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textColorHint="#78909C"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <Spinner
+                    android:id="@+id/sp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:contentDescription=""
+                    android:entries="@array/nivel"
+                    android:minHeight="48dp"
+                    android:contextClickable="true"
+                    android:spinnerMode="dropdown"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="400dp"
+            android:layout_height="91dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:onClick="RadioClicked"
+                android:text="@string/familia_numerosa_general"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/rbPelicula"
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:backgroundTint="#2FC3D6"
+                android:onClick="RadioClicked"
+                android:text="@string/familia_numerosa_especial"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:backgroundTint="#2FC3D6"
+                android:onClick="RadioClicked"
+                android:text="@string/no_familia_numerosa"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbIngles"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:onClick="CheckBoxClicked"
+                android:text="@string/ingl_s"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <CheckBox
+                android:id="@+id/cbFrances"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:onClick="CheckBoxClicked"
+                android:text="@string/franc_s"
+                tools:ignore="OnClick" />
+
+            <CheckBox
+                android:id="@+id/cbAleman"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:onClick="CheckBoxClicked"
+                android:text="@string/alem_n"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="80dp"
+        android:layout_height="38dp"
+        android:text="@string/ENVIAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="311dp"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="@string/ficha_academia_de_idiomas"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.586" />
+
+
+</android.support.constraint.ConstraintLayout>

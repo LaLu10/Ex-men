@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ExamenPractico</string>
+    <string name="no_familia_numerosa">No Familia Numerosa</string>
+    <string name="familia_numerosa_especial">Familia Numerosa Especial</string>
+    <string name="familia_numerosa_general">Familia Numerosa General</string>
+    <string name="nombre">Nombre</string>
+    <string name="ENVIAR">ENVIAR</string>
+    <string name="todo">TODO</string>
+    <string name="ingl_s">Inglés</string>
+    <string name="franc_s">Francés</string>
+    <string name="alem_n">Alemán</string>
+    <string name="edad">Edad</string>
+    <string name="ficha_academia_de_idiomas">FICHA ALUMNO PARA LA ACADEMIA DE IDIOMAS</string>
+</resources>
